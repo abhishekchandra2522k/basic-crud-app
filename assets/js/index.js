@@ -10,7 +10,7 @@ $("#update_user").submit(function(event){
         data[n['name']] = n['value']
     })
     var request = {
-        "url" : `https://teacher-management-app.herokuapp.com/api/users/${data.id}`,
+        "url" : `http://teacher-management-app.herokuapp.com/api/users/${data.id}`,
         "method" : "PUT",
         "data" : data
     }
@@ -26,7 +26,7 @@ $("#update_user").submit(function(event){
          var id = $(this).attr("data-id")
 
          var request = {
-            "url" : `https://teacher-management-app.herokuapp.com/api/users/${id}`,
+            "url" : `http://teacher-management-app.herokuapp.com/api/users/${id}`,
             "method" : "DELETE"
             // "data": data  
         }
